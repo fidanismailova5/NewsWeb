@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Domain.Entities.Common;
+using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Linq;
@@ -7,9 +8,8 @@ using System.Threading.Tasks;
 
 namespace Domain.Entities
 {
-    public class Users
+    public class Users :BaseDomainEntity
     {
-        public int Id { get; set; }
         public string Name { get; set; }
         public string Password { get; set; }
         public string Email { get; set; }
