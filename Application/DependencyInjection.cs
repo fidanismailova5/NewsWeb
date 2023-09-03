@@ -14,21 +14,12 @@ namespace Application
     {
         public static IServiceCollection AddApplication(this IServiceCollection services)
         {
-            var assembly = typeof(DependencyInjection).Assembly;
-            services.AddMediatR(configuration =>
-                configuration.RegisterServicesFromAssembly(assembly));
+			services.AddAutoMapper(Assembly.GetExecutingAssembly());
+			services.AddMediatR(Assembly.GetExecutingAssembly());
 
-            services.AddValidatorsFromAssembly(assembly);
-            services.AddAutoMapper(assembly);
             return services;
         }
 
-        //public static IServiceCollection ConfigureApplicationServices(this IServiceCollection services)
-        //{
-        //    services.AddAutoMapper(Assembly.GetExecutingAssembly());
-        //    services.AddMediatR(Assembly.GetExecutingAssembly());
-        //    return services;
-        //}
 
     }
 }
