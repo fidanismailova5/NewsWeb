@@ -1,4 +1,5 @@
-﻿<!DOCTYPE html>
+﻿@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+<!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
@@ -112,20 +113,27 @@
         <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
           <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
-
-          <li class="nav-item">
-            <a href="pages/gallery.html" class="nav-link">
-              <i class="nav-icon far fa-image"></i>
-              <p>
-                Xəbərlər
-              </p>
-            </a>
-          </li>
                         <li class="nav-item">
-                            <a href="pages/gallery.html" class="nav-link">
+                            <a asp-area="Admin" asp-controller="Home" asp-action="Index" class="nav-link">
                                 <i class="nav-icon far fa-image"></i>
                                 <p>
-                                    Gallery
+                                    Home
+                                </p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a asp-controller="Category" asp-action="Index" class="nav-link">
+                                <i class="nav-icon far fa-image"></i>
+                                <p>
+                                    Categories
+                                </p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a asp-controller="Post" asp-action="Index" class="nav-link">
+                                <i class="nav-icon far fa-image"></i>
+                                <p>
+                                    Posts
                                 </p>
                             </a>
                         </li>
@@ -143,15 +151,7 @@
     <div class="content-header">
       <div class="container-fluid">
         <div class="row mb-2">
-          <div class="col-sm-6">
-            <h1 class="m-0">Dashboard</h1>
-          </div><!-- /.col -->
-          <div class="col-sm-6">
-            <ol class="breadcrumb float-sm-right">
-              <li class="breadcrumb-item"><a href="#">Home</a></li>
-              <li class="breadcrumb-item active">Dashboard v1</li>
-            </ol>
-          </div><!-- /.col -->
+
         </div><!-- /.row -->
       </div><!-- /.container-fluid -->
     </div>
@@ -213,6 +213,12 @@
     <script src="~/dist/js/demo.js"></script>
     <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
     <script src="~/dist/js/pages/dashboard.js"></script>
+    <script>
+        $(function () {
+            // Summernote
+            $('#summernote').summernote()
+        })
+    </script>
 </body>
 </html>
 

@@ -1,11 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "YzumA5mK4fwSlBthexciXD6u68c0LYfi3BlrI7/dzIrsgigMQR97s5qg/60QN2OiiXrb4HraLZoTts44nzRC5A==",
+  "dgSpecHash": "ZhqSNju+gvhWP3WaTa5W5XdsBeFEdWm5e9eQ3/LBDX4YJvcOSiEgFlC5NQRrK1WBxYHr5s5v92U++rpnzNhm9A==",
   "success": true,
   "projectFilePath": "C:\\Users\\HP\\source\\repos\\NewsWeb\\Domain\\Domain.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\HP\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\HP\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
+    "C:\\Users\\HP\\.nuget\\packages\\mediatr\\11.0.0\\mediatr.11.0.0.nupkg.sha512",
+    "C:\\Users\\HP\\.nuget\\packages\\mediatr.contracts\\1.0.1\\mediatr.contracts.1.0.1.nupkg.sha512",
+    "C:\\Users\\HP\\.nuget\\packages\\mediatr.extensions.microsoft.dependencyinjection\\11.1.0\\mediatr.extensions.microsoft.dependencyinjection.11.1.0.nupkg.sha512",
     "C:\\Users\\HP\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "C:\\Users\\HP\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\HP\\.nuget\\packages\\microsoft.data.sqlclient\\5.0.2\\microsoft.data.sqlclient.5.0.2.nupkg.sha512",
